@@ -1,0 +1,64 @@
+button {
+    /* margin: 10px; */
+    padding: 10px;
+}
+
+.delete-button {
+    margin-top: 10px;
+
+}
+
+.employee-list {
+    /* display: none; */
+    margin-top: 20px;
+
+    display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+div {
+    display: flex;
+    margin: auto;
+flex-direction: column;
+flex-wrap: wrap;
+width: 200px;
+}
+
+.show {
+    /* display: block; */
+    display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+#backButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.employee-info {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.employee-card {
+    background-color: white;
+    width: fit-content;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.employee-card h4,
+.employee-card p {
+    margin: 0;
+}
+
+img {
+    object-fit: contain;
+    object-position: left;
+}
