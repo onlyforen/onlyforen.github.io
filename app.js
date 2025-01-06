@@ -1,6 +1,6 @@
 // Данные о сотрудниках
 const employees = [
-    { id: 1, fio: 'Иванов Иван Иванович', workYears: 5, position: 'Менеджер', place: 'Заведение 1', photo: './img/Uteva.png' },
+    { id: 1, fio: 'Утева Александра Максимовна', workYears: 5, position: 'Ук', place: 'Цоколь', photo: './img/Uteva.png' },
     { id: 2, fio: 'Петров Петр Петрович', workYears: 7, position: 'Администратор', place: 'Заведение 2', photo: '/path/to/anotherPhoto.jpg' },
     // Добавьте больше сотрудников...
 ];
