@@ -1,8 +1,12 @@
 // Данные о сотрудниках
+const datee = 25;
 const employees = [
-    { id: 1, fio: 'Утева Александра Максимовна', workYears: 5, position: 'Ук', place: 'Цоколь', photo: './img/Uteva.png' },
-    { id: 2, fio: 'Петров Петр Петрович', workYears: 7, position: 'Администратор', place: 'Заведение 2', photo: '/path/to/anotherPhoto.jpg' },
-    // Добавьте больше сотрудников...
+    { id: 0, fio: 'Утева Александра Максимовна', workYears: 19, position: 'Ук', place: 'Цоколь', photo: './img/Tsokol/Uteva.png' },
+    { id: 0, fio: 'Булатов Ришат Тимурович', workYears: 23, position: 'СС', place: 'Цоколь', photo: './img/Tsokol/Bulatov.png' },
+    { id: 0, fio: '', workYears: 19, position: '', place: 'Цоколь', photo: './img/.png' },
+    
+    { id: 1, fio: 'Петров Петр Петрович', workYears: 7, position: 'Администратор', place: 'Депо', photo: '/path/to/anotherPhoto.jpg' },
+    // 0 - цоколь
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -65,6 +69,7 @@ function createButtons() {
         for (let j = 0; j < 15; j++) {
             const employeeData = employees[j];
             if (!employeeData) continue;
+            if (employeeData.id == index ) {
 
             const employeeButton = document.createElement('button');
             employeeButton.textContent = `${employeeData.fio}`;
@@ -73,7 +78,7 @@ function createButtons() {
 
             employeeButton.addEventListener('click', () => {
                 saveEmployeeCard(employeeData);
-            });
+            });}
         }
 
         container.appendChild(employeeList);
@@ -97,10 +102,10 @@ function createButtons() {
                     <div class="photo-container">
                         <img src="${employeeData.photo}" alt="Фото сотрудника" />
                     </div>
-                    <h4>ФИО: ${employeeData.fio}</h4>
-                    <p>Стаж работы: ${employeeData.workYears} лет</p>
-                    <p>Должность: ${employeeData.position}</p>
-                    <p>Место работы: ${employeeData.place}</p>
+                    <h4 class="FIO">${employeeData.fio}</h4>
+                    <p>Стаж работы: ${datee - employeeData.workYears} лет</p>
+                    <p>${employeeData.position}</p>
+                    <p>${employeeData.place}</p>
                     <button class="delete-button">Удалить</button>
                 `;
     
