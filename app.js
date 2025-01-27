@@ -1,10 +1,10 @@
 // Данные о сотрудниках
 const datee = 25;
 const employees = [
-    { id: 0, fio: 'Утева Александра Максимовна', workYears: 19, position: 'Ук', place: 'Цоколь', photo: './img/Tsokol/Uteva.png' },
-    { id: 0, fio: 'Булатов Ришат Тимурович', workYears: 23, position: 'СС', place: 'Цоколь', photo: './img/Tsokol/Bulatov.png' },
-    { id: 0, fio: 'Эфендиева Аида Лазимовна', workYears: 19, position: '', place: 'Цоколь', photo: './img/.png' },
-    { id: 0, fio: 'Обыденникова Анна Сергеевна', workYears: 19, position: '', place: 'Цоколь', photo: './img/.png' },
+    { id: 0, fio: 'Утева Александра', workYears: 19, position: 'Ук', place: 'Цоколь', photo: './img/Tsokol/Uteva.png' },
+    { id: 0, fio: 'Булатов Ришат', workYears: 23, position: 'СС', place: 'Цоколь', photo: './img/Tsokol/Bulatov.png' },
+    { id: 0, fio: 'Эфендиева Аида', workYears: 19, position: 'Мразь', place: 'Цоколь', photo: './img/.png' },
+    { id: 0, fio: 'Обыденникова Анна', workYears: 19, position: 'СС+', place: 'Цоколь', photo: './img/Tsokol/Obidennikova.jpg' },
     { id: 0, fio: '', workYears: 19, position: '', place: 'Цоколь', photo: './img/.png' },
     { id: 0, fio: '', workYears: 19, position: '', place: 'Цоколь', photo: './img/.png' },
     { id: 0, fio: '', workYears: 19, position: '', place: 'Цоколь', photo: './img/.png' },
@@ -109,12 +109,12 @@ function createButtons() {
                 employeeCard.innerHTML = `
 
                     <h4 class="FIO">${employeeData.fio}</h4>
+                    <p class="workplace">${employeeData.place}</p>
     
-                    <p>${employeeData.position}</p>
-                    <p>Стаж работы: ${datee - employeeData.workYears} лет</p>
+                    <p>Должность: ${employeeData.position}</p>
+                    <p>Стаж: ${datee - employeeData.workYears}</p>
 
                     <div class="image_place">
-                        <p class="workplace">${employeeData.place}</p>
                         <div class="photo-container">
                             <img src="${employeeData.photo}" alt="Фото сотрудника" />
                         </div>
