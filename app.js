@@ -1,10 +1,10 @@
 // Данные о сотрудниках
 const datee = 25;
 const employees = [
-    { id: 0, fio: 'Утева Александра', workYears: 19, position: 'Ук', place: 'Цоколь', photo: './img/Tsokol/Uteva.png' },
-    { id: 0, fio: 'Булатов Ришат', workYears: 23, position: 'СС', place: 'Цоколь', photo: './img/Tsokol/Bulatov.png' },
-    { id: 0, fio: 'Эфендиева Аида', workYears: 19, position: 'Мразь', place: 'Цоколь', photo: './img/.png' },
-    { id: 0, fio: 'Обыденникова Анна', workYears: 19, position: 'СС+', place: 'Цоколь', photo: './img/Tsokol/Obidennikova.jpg' },
+    { id: 0, fio: 'Утева Александра', workYears: 22, position: 'Ук', place: 'Цоколь', photo: './img/Tsokol/Uteva.jpg' },
+    { id: 0, fio: 'Булатов Ришат', workYears: 22, position: 'СС', place: 'Цоколь', photo: './img/Tsokol/Bulatov.png' },
+    { id: 0, fio: 'Эфендиева Аида', workYears: 22, position: 'СС', place: 'Цоколь', photo: './img/Tsokol/Efendieva.jpg' },
+    { id: 0, fio: 'Обыденникова Анна', workYears: 23, position: 'СС+', place: 'Цоколь', photo: './img/Tsokol/Obidennikova.jpg' },
     { id: 0, fio: '', workYears: 19, position: '', place: 'Цоколь', photo: './img/.png' },
     { id: 0, fio: '', workYears: 19, position: '', place: 'Цоколь', photo: './img/.png' },
     { id: 0, fio: '', workYears: 19, position: '', place: 'Цоколь', photo: './img/.png' },
